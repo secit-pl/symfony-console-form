@@ -2,6 +2,7 @@
 
 namespace Matthias\SymfonyConsoleForm\Bridge\Transformer;
 
+use Doctrine\Common\Collections\Collection;
 use Matthias\SymfonyConsoleForm\Console\Formatter\Format;
 use Matthias\SymfonyConsoleForm\Form\FormUtil;
 use Symfony\Component\Form\FormInterface;
