@@ -37,6 +37,8 @@ abstract class AbstractTransformer implements FormToQuestionTransformer
         $defaultValue = $form->getData();
         if (is_array($defaultValue)) {
             $defaultValue = implode(',', $defaultValue);
+        } elseif ($defaultValue instanceof Collection) {
+            $defaultValue = implode(',', $defaultValue->toArray());
         }
 
         return $defaultValue;
